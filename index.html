@@ -1,28 +1,78 @@
 <!DOCTYPE html>
 <html lang="bn">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Lite App</title>
-<style>
-body{text-align:center;font-family:sans-serif;padding:30px 15px;background:#f0f4f8;margin:0;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:100vh}
-.card{background:white;padding:30px;border-radius:15px;box-shadow:0 4px 10px rgba(0,0,0,0.1);max-width:350px;width:100%}
-h1{color:#1877f2;margin:0 0 10px}
-p{font-size:16px;color:#555;margin:5px 0}
-.btn{background:#1877f2;color:white;padding:15px 30px;font-size:18px;border-radius:8px;text-decoration:none;display:block;margin:25px 0;font-weight:bold}
-.warn{background:#fff5f5;border:1px dashed red;padding:10px;font-size:14px;color:red;border-radius:5px}
-.ver{color:#888;font-size:12px;margin-top:15px}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Apps - ডাউনলোড</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            text-align: center; 
+            padding: 30px 20px; 
+            background: #f0f4f8; 
+            margin: 0;
+            color: #333;
+        }
+        h1 { color: #1877f2; margin-bottom: 10px; }
+        .subtitle { font-size: 18px; margin-bottom: 40px; }
+        .app-card {
+            background: white;
+            margin: 15px auto;
+            padding: 20px;
+            border-radius: 12px;
+            max-width: 320px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        .btn { 
+            background: #1877f2; 
+            color: white; 
+            padding: 15px 30px; 
+            font-size: 19px; 
+            border: none; 
+            border-radius: 10px; 
+            cursor: pointer; 
+            text-decoration: none; 
+            display: inline-block; 
+            margin-top: 15px;
+            width: 100%;
+        }
+        .warning { 
+            color: #d32f2f; 
+            background: #ffebee; 
+            padding: 15px; 
+            border-radius: 10px; 
+            margin: 40px auto; 
+            max-width: 600px; 
+            font-size: 15px; 
+        }
+    </style>
 </head>
 <body>
-<div class="card">
-<h1>Lite</h1>
-<p>কম ডেটা খরচ • স্লো ফোনেও চলে</p>
-<a href="Lite.apk" download class="btn">📥 অ্যাপ ডাউনলোড করুন</a>
-<div class="warn">
-⚠️ ডাউনলোড শেষে <b>Lite.apk</b> ওপেন করুন। 'Unknown Sources' পারমিশন অন করতে হতে পারে।
-</div>
-<p class="ver">Version: 1.0</p>
-</div>
+    <h1>আমার অ্যাপস</h1>
+    <p class="subtitle">কম ডেটা খায় • Low-end ফোনে দারুণ চলে</p>
+
+    <!-- Lite অ্যাপ (আগেরটা) -->
+    <div class="app-card">
+        <h2>Lite</h2>
+        <p>সোশ্যাল মিডিয়া অ্যাপ - খুব লাইট</p>
+        <a href="Lite.apk" download class="btn">📥 Lite ডাউনলোড করুন</a>
+    </div>
+
+    <!-- এখানে নতুন অ্যাপ যোগ করতে পারবে -->
+    <!-- উদাহরণ:
+    <div class="app-card">
+        <h2>My Game</h2>
+        <p>মজার গেম</p>
+        <a href="mygame.apk" download class="btn">📥 My Game ডাউনলোড করুন</a>
+    </div>
+    -->
+
+    <div class="warning">
+        ⚠️ <strong>সতর্কতা:</strong><br>
+        • ডাউনলোড শেষ হলে ফাইল ম্যানেজারে গিয়ে .apk ফাইলে ক্লিক করুন<br>
+        • Settings → Security → Unknown sources অন করুন
+    </div>
+
+    <p style="color:#666; margin-top:40px;">Version: 1.0 | Made for Bangladesh</p>
 </body>
 </html>
